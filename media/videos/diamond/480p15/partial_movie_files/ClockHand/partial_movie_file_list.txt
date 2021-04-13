@@ -1,5 +1,0 @@
-# This file is used internally by FFMPEG.
-file 'file:/Users/jeqcho/PycharmProjects/kopitiam-maths/media/videos/diamond/480p15/partial_movie_files/ClockHand/3163782288_3789291811_3023565228.mp4'
-file 'file:/Users/jeqcho/PycharmProjects/kopitiam-maths/media/videos/diamond/480p15/partial_movie_files/ClockHand/1495979052_1021732567_1416185886.mp4'
-file 'file:/Users/jeqcho/PycharmProjects/kopitiam-maths/media/videos/diamond/480p15/partial_movie_files/ClockHand/1495979052_911006091_162384359.mp4'
-file 'file:/Users/jeqcho/PycharmProjects/kopitiam-maths/media/videos/diamond/480p15/partial_movie_files/ClockHand/1495979052_4241437728_1416185886.mp4'

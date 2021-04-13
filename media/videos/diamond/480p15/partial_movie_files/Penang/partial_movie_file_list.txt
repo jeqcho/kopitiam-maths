@@ -1,7 +1,0 @@
-# This file is used internally by FFMPEG.
-file 'file:/Users/jeqcho/PycharmProjects/kopitiam-maths/media/videos/diamond/480p15/partial_movie_files/Penang/3163782288_4038600291_3936333526.mp4'
-file 'file:/Users/jeqcho/PycharmProjects/kopitiam-maths/media/videos/diamond/480p15/partial_movie_files/Penang/1495979052_4180579860_1106739005.mp4'
-file 'file:/Users/jeqcho/PycharmProjects/kopitiam-maths/media/videos/diamond/480p15/partial_movie_files/Penang/1495979052_1308890551_1014761162.mp4'
-file 'file:/Users/jeqcho/PycharmProjects/kopitiam-maths/media/videos/diamond/480p15/partial_movie_files/Penang/1495979052_4180579860_223132457.mp4'
-file 'file:/Users/jeqcho/PycharmProjects/kopitiam-maths/media/videos/diamond/480p15/partial_movie_files/Penang/1495979052_3174516250_4272822559.mp4'
-file 'file:/Users/jeqcho/PycharmProjects/kopitiam-maths/media/videos/diamond/480p15/partial_movie_files/Penang/1495979052_4180579860_1652998919.mp4'

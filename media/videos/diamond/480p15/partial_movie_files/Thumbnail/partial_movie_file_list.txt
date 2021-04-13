@@ -1,3 +1,0 @@
-# This file is used internally by FFMPEG.
-file 'file:/Users/jeqcho/PycharmProjects/kopitiam-maths/media/videos/diamond/480p15/partial_movie_files/Thumbnail/3163782288_1882573994_3063891404.mp4'
-file 'file:/Users/jeqcho/PycharmProjects/kopitiam-maths/media/videos/diamond/480p15/partial_movie_files/Thumbnail/1495979052_4180579860_2909584703.mp4'

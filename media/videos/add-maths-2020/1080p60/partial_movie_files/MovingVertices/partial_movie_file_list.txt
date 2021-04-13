@@ -1,7 +1,0 @@
-# This file is used internally by FFMPEG.
-file 'file:/Users/jeqcho/PycharmProjects/kopitiam-maths/media/videos/add-maths-2020/1080p60/partial_movie_files/MovingVertices/450974505_2254575145_3269817681.mp4'
-file 'file:/Users/jeqcho/PycharmProjects/kopitiam-maths/media/videos/add-maths-2020/1080p60/partial_movie_files/MovingVertices/2788726626_4180579860_796313492.mp4'
-file 'file:/Users/jeqcho/PycharmProjects/kopitiam-maths/media/videos/add-maths-2020/1080p60/partial_movie_files/MovingVertices/2788726626_1680791469_441272808.mp4'
-file 'file:/Users/jeqcho/PycharmProjects/kopitiam-maths/media/videos/add-maths-2020/1080p60/partial_movie_files/MovingVertices/2788726626_1399436167_3269817681.mp4'
-file 'file:/Users/jeqcho/PycharmProjects/kopitiam-maths/media/videos/add-maths-2020/1080p60/partial_movie_files/MovingVertices/2788726626_3296779629_3857571418.mp4'
-file 'file:/Users/jeqcho/PycharmProjects/kopitiam-maths/media/videos/add-maths-2020/1080p60/partial_movie_files/MovingVertices/2788726626_4180579860_2013207266.mp4'

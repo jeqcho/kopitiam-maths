@@ -1,2 +1,0 @@
-# This file is used internally by FFMPEG.
-file 'file:/Users/jeqcho/PycharmProjects/kopitiam-maths/media/videos/add-maths-2020/480p15/partial_movie_files/SinAndCosFunctionPlot/3163782288_4180579860_4264579360.mp4'
