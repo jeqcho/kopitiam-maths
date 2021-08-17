@@ -1,2 +1,6 @@
 # Project exclude paths
 /venv/
+
+/media/
+
+/.idea/

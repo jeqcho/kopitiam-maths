@@ -1203,3 +1203,40 @@ class Chosen(Scene):
             tapir, txt, kopi, graph
         )
         self.wait()
+
+
+class ProblemStatement(Scene):
+    def construct(self):
+
+        g = get_diamond()
+        tapir = SVGMobject("img/cute-tapir.svg")
+        tapir.scale(0.2).next_to(g[0].get_center(), UL * 0.5 + UP+0.25),
+        A = Text("A").next_to(g[0], LEFT)
+        B = Text("B").next_to(g[6], RIGHT)
+
+        g_group = VGroup(
+            A, B, g, tapir
+        )
+        g_group.to_edge(DOWN)
+        self.add(
+            g_group
+        )
+
+        txt = Text("Find the probability that the tapir reaches B from A.").scale(
+            0.7).to_edge(UP)
+        self.add(
+            txt
+        )
+        conditions = [
+            "1. The tapir must move.",
+            "2. The tapir can move 3 steps maximum.",
+            "3. Roads cannot be reused.",
+            "4. Each sequence of moves has an equal probability of being chosen."
+        ]
+        clarifications = VGroup(*[Text(x).scale(0.5) for x in conditions])
+        clarifications.arrange(DOWN, center=False, aligned_edge=LEFT).next_to(txt, DOWN)
+        for x in clarifications:
+            self.add(
+                x
+            )
+        self.wait()
