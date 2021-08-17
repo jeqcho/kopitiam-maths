@@ -96,13 +96,13 @@ class Problem(MovingCameraScene):
         g = get_diamond()
         tapir = SVGMobject("img/tapir.svg")
         self.play(
-            FadeInFrom(tapir)
+            FadeIn(tapir)
         )
         self.play(
             tapir.animate.scale(0.2).next_to(g[0].get_center(), UL * 0.5)
         )
         self.play(
-            ShowCreation(g),
+            Create(g),
             run_time=2
         )
         self.wait()
@@ -132,26 +132,26 @@ class Problem(MovingCameraScene):
         self.play(
             tapir.animate.next_to(g[2].get_center(), UL * 0.5),
             g[2].animate.set_fill(GREEN),
-            ShowCreation(line_1)
+            Create(line_1)
         )
         self.wait(0.5)
 
         self.play(
             tapir.animate.next_to(g[4].get_center(), UL * 0.5),
             g[4].animate.set_fill(GREEN),
-            ShowCreation(line_2)
+            Create(line_2)
         )
         self.wait(0.5)
 
         self.play(
             tapir.animate.next_to(g[3].get_center(), UL * 0.5),
             g[3].animate.set_fill(GREEN),
-            ShowCreation(line_3)
+            Create(line_3)
         )
         self.wait(0.5)
 
         self.play(
-            ShowCreation(line_4)
+            Create(line_4)
         )
         self.wait()
 
@@ -182,19 +182,19 @@ class Problem(MovingCameraScene):
         self.play(
             g[5].animate.set_fill(GREEN),
             tapir.animate.next_to(g[5].get_center(), UL * 0.5),
-            ShowCreation(line_1)
+            Create(line_1)
         )
 
         self.play(
             g[4].animate.set_fill(GREEN),
             tapir.animate.next_to(g[4].get_center(), UL * 0.5),
-            ShowCreation(line_2)
+            Create(line_2)
         )
         g[4].set_z_index(100)
         g[5].set_z_index(100)
 
         self.play(
-            ShowCreation(line_3)
+            Create(line_3)
         )
 
         self.play(
@@ -224,19 +224,19 @@ class Problem(MovingCameraScene):
         self.play(
             g[2].animate.set_fill(GREEN),
             tapir.animate.next_to(g[2].get_center(), UL * 0.5),
-            ShowCreation(line_1)
+            Create(line_1)
         )
 
         self.play(
             g[1].animate.set_fill(GREEN),
             tapir.animate.next_to(g[1].get_center(), UL * 0.5),
-            ShowCreation(line_2)
+            Create(line_2)
         )
 
         self.play(
             g[0].animate.set_fill(GREEN),
             tapir.animate.next_to(g[0].get_center(), UL * 0.5),
-            ShowCreation(line_3)
+            Create(line_3)
         )
 
         self.play(
@@ -306,7 +306,7 @@ class Terminology(Scene):
         # graph terminology
         arrow1 = Arrow(start=g[3].get_center() + UR, end=g[3].get_center())
         self.play(
-            ShowCreation(arrow1),
+            Create(arrow1),
             g[3].animate.set_fill(HIGHLIGHT)
         )
         txt_node = Text("Node").next_to(arrow1.get_start(), RIGHT)
@@ -344,7 +344,7 @@ class Terminology(Scene):
             line_1, line_2, line_3
         ]
         for line in lines:
-            self.play(ShowCreation(line))
+            self.play(Create(line))
 
         txt = Text("Trail").to_edge(UP, buff=1)
         self.play(
@@ -455,7 +455,7 @@ class Strategy(Scene):
         )
         tapir = SVGMobject("img/tapir.svg").scale(0.2).next_to(g[0].get_center(), UL*0.5)
         self.play(
-            FadeInFrom(tapir)
+            FadeIn(tapir)
         )
         self.play(
             tapir.animate.next_to(g[2].get_center(), UL*0.6)
@@ -491,7 +491,7 @@ class Strategy(Scene):
         hand = Arrow(start=g[0].get_center(), end=g[0].get_center() + UP * 0.5, buff=0).set_color(YELLOW)
 
         self.play(
-            ShowCreation(hand),
+            Create(hand),
             run_time=2
         )
         self.play(Rotating(hand, about_point=g[0].get_center(), run_time=3, radians=-TAU))
@@ -527,16 +527,16 @@ class Strategy(Scene):
             vertex.rotate(-PI / 2).scale(0.5)
         txt = Text("Tree Diagram").next_to(g, UP)
         self.play(
-            FadeInFrom(image),
+            FadeIn(image),
             Write(txt)
         )
         self.wait(0.5)
         self.play(
-            FadeOutAndShift(image, UP)
+            FadeOut(image, UP)
         )
 
         self.play(
-            ShowCreation(g),
+            Create(g),
         )
         self.wait(2)
         self.play(
@@ -628,7 +628,7 @@ class Implementation(Scene):
 
         hand = Arrow(start=g[now].get_center(), end=g[now].get_center() + UP * 0.5, buff=0).set_color(YELLOW)
         self.play(
-            ShowCreation(hand, run_time=self.speed)
+            Create(hand, run_time=self.speed)
         )
         self.play(Rotating(hand, about_point=g[now].get_center(), run_time=self.speed, radians=-TAU))
         self.play(
@@ -652,8 +652,8 @@ class Implementation(Scene):
 
             # draw
             self.play(
-                ShowCreation(line1, run_time=self.speed),
-                ShowCreation(tree_line, run_time=self.speed)
+                Create(line1, run_time=self.speed),
+                Create(tree_line, run_time=self.speed)
             )
 
             nxt_y = self.dfs_and_color(g, nxt, now, length + 1, nxt_x, nxt_y)
@@ -674,7 +674,7 @@ class Implementation(Scene):
             # draw
             self.play(
                 Uncreate(line1, run_time=self.speed),
-                ShowCreation(tree_line_back, run_time=self.speed)
+                Create(tree_line_back, run_time=self.speed)
             )
 
             self.tree_group -= tree_line
@@ -691,7 +691,7 @@ class Implementation(Scene):
 
     def construct(self):
         g = get_diamond()
-        self.play(ShowCreation(g))
+        self.play(Create(g))
         A = Text("A").next_to(g[0], LEFT)
         B = Text("B").next_to(g[6], RIGHT)
         self.play(
@@ -887,13 +887,13 @@ class Calculation(Scene):
             box = SurroundingRectangle(seven, buff=0.05)
             boxes += box
         self.play(
-            ShowCreation(boxes)
+            Create(boxes)
         )
 
         self.wait()
         odd_7_arrow = Arrow(start=self.number_7[-1].get_center() + DL, end=self.number_7[-1].get_center())
         self.play(
-            ShowCreation(odd_7_arrow)
+            Create(odd_7_arrow)
         )
         self.wait()
         self.play(
@@ -927,7 +927,7 @@ class Calculation(Scene):
         )
         self.wait()
         self.play(
-            ShowCreation(SurroundingRectangle(equation_3, buff=0.1))
+            Create(SurroundingRectangle(equation_3, buff=0.1))
         )
         self.play(
             FadeOut(graph_group)
@@ -975,8 +975,8 @@ class Reflection(Scene):
         )
         self.wait()
         self.play(
-            FadeOutAndShift(tapir1),
-            FadeOutAndShift(tapir2)
+            FadeOut(tapir1),
+            FadeOut(tapir2)
         )
         self.wait()
 
@@ -1018,7 +1018,7 @@ class DFS(Scene):
     def construct(self):
         g = get_diamond()
         self.play(
-            ShowCreation(g)
+            Create(g)
         )
         self.wait()
         txt = Text("Depth-first search").next_to(g, DOWN)
@@ -1037,14 +1037,14 @@ class Ending(Scene):
     def construct(self):
         # tapir = ImageMobject("img/cute-tapir.png")
         # self.play(
-        #     FadeInFrom(tapir)
+        #     FadeIn(tapir)
         # )
         # self.play(
         #     tapir.animate.shift(LEFT)
         # )
         kopi = ImageMobject("img/kopi.png").scale(0.5)
         self.play(
-            FadeInFrom(kopi)
+            FadeIn(kopi)
         )
         kopi_2 = ImageMobject("img/kopi.png").scale(0.5)
         title = Text("Kopitiam Maths")
@@ -1064,11 +1064,11 @@ class Ending(Scene):
 class ClockHand(Scene):
     def construct(self):
         g = get_diamond()
-        self.play(ShowCreation(g))
+        self.play(Create(g))
         hand = Arrow(start=g[0].get_center(), end=g[0].get_center() + UP * 0.5, buff=0).set_color(YELLOW)
 
         self.play(
-            ShowCreation(hand)
+            Create(hand)
         )
         self.play(Rotating(hand, about_point=g[0].get_center(), run_time=2, radians=-TAU))
         self.play(
@@ -1082,7 +1082,7 @@ class lts(Scene):
         autolayouts = ["spring", "circular", "kamada_kawai",
                        "planar", "random", "shell",
                        "spectral", "spiral"]
-        self.play(ShowCreation(g))
+        self.play(Create(g))
         for lt in autolayouts:
             self.play(
                 g.animate.change_layout(lt)
@@ -1096,7 +1096,7 @@ class lts(Scene):
 class Colors(Scene):
     def construct(self):
         self.play(
-            ShowCreation(
+            Create(
                 VGroup(
                     Text("G").set_color(BLUE),
                     Text("A").set_color(BLUE_A),
