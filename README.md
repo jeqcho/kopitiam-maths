@@ -14,7 +14,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/jeqcho/kopitiam-maths">
-    <img src="img/kopi.png" alt="Logo" width="80" height="80">
+    <img src="img/kopi.png" alt="Logo" height="80">
   </a>
 
   <h3 align="center">Kopitiam Maths</h3>
