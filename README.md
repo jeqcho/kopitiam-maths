@@ -1,6 +1,6 @@
 # Kopitiam Maths
 
-![Kopitiam Maths](https://github.com/jeqcho/kopitiam-maths/blob/master/img/Kopitiam-Maths.png "Kopitiam Maths")
+![Kopitiam Maths](img/kopi.png "Kopitiam Maths")
 
 Kopitiam Maths is a youth movement to foster national mathematics interest among students.
 
