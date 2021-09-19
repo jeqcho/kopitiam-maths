@@ -17,7 +17,7 @@ class All(Scene):
         self.play(
             square.animate.shift(LEFT * 2)
         )
-        w_brace = Tex(r'.',color=BLUE_E).move_to(square)
+        w_brace = Tex(r'.', color=BLUE_E).move_to(square)
         h_brace = Tex(r'.', color=BLUE_E).move_to(square)
         h = Tex(r'.', color=BLUE_E).move_to(square)
         w = Tex(r'.', color=BLUE_E).move_to(square)
